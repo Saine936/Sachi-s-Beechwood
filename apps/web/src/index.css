@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Parisienne&family=Karla:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Karla", system-ui, sans-serif;
+  overflow-x: clip;
+}
+
+@layer base {
+  :root {
+    --background: 38 44% 96%;
+    --foreground: 24 16% 16%;
+    --card: 40 50% 98%;
+    --card-foreground: 24 16% 16%;
+    --popover: 40 50% 98%;
+    --popover-foreground: 24 16% 16%;
+    --primary: 22 32% 22%;
+    --primary-foreground: 40 50% 97%;
+    --secondary: 34 38% 88%;
+    --secondary-foreground: 22 32% 22%;
+    --muted: 36 30% 90%;
+    --muted-foreground: 26 12% 40%;
+    --accent: 28 48% 58%;
+    --accent-foreground: 24 30% 15%;
+    --destructive: 4 60% 44%;
+    --destructive-foreground: 40 50% 97%;
+    --border: 32 24% 84%;
+    --input: 32 24% 82%;
+    --ring: 28 48% 48%;
+    --radius: 1rem;
+    --sage: 92 12% 44%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+  h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; }
+}
+
+.font-script { font-family: "Parisienne", cursive; }
+.paper-grain {
+  background-image: radial-gradient(hsl(28 40% 70% / 0.13) 1px, transparent 1px);
+  background-size: 18px 18px;
+}

@@ -1,0 +1,165 @@
+// Single source of truth for the menu.
+// price: null means the price could not be verified — the site shows "Confirm in café".
+// Add a price as a string (e.g. '$6.50') once confirmed by the owner.
+const i = (name, description = '', price = null) => ({ name, description, price });
+
+export const menu = [
+  {
+    id: 'all-day-breakfast',
+    title: 'All-Day Breakfast',
+    blurb: 'Served from open to close.',
+    items: [
+      i('English Egg & Cheese'),
+      i('Bacon, Egg & Cheese'),
+      i('Sunrise Sandwich'),
+      i('Bagel Cream Cheese'),
+      i('Bagel Egg & Cheese'),
+      i('Bagel BLT'),
+      i('The Ultimate Bagel'),
+      i('Salmon Bagel'),
+    ],
+  },
+  {
+    id: 'croissants',
+    title: 'Croissants',
+    items: [
+      i('Cheese Croissant'),
+      i('Egg & Cheese Croissant'),
+      i('Turkey Cheese Croissant'),
+      i('Ham & Cheese Croissant'),
+      i('Omelette Croissant'),
+      i('BLT Croissant'),
+    ],
+  },
+  {
+    id: 'lunch',
+    title: 'Lunch',
+    blurb: 'Ask our staff about today’s selection.',
+    items: [i('Salad of the Day'), i('Soup of the Day')],
+  },
+  {
+    id: 'omelettes',
+    title: 'Omelettes',
+    items: [
+      i('Three-Way Omelette'),
+      i('Vegetarian Omelette'),
+      i('Mushroom Omelette'),
+      i('The Ultimate Omelette'),
+    ],
+  },
+  {
+    id: 'sandwiches',
+    title: 'Sandwiches',
+    items: [i('Pesto Chicken Panini'), i('The Three Way'), i('Philly Steak Sandwich')],
+  },
+  {
+    id: 'wraps',
+    title: 'Wraps',
+    items: [i('Grilled Chicken Wrap'), i('Smokey Beef Wrap'), i('Vegan Wrap')],
+  },
+  {
+    id: 'drinks',
+    title: 'Coffee & Drinks',
+    blurb: 'Milk options: 2%, oat, almond or soy.',
+    items: [
+      i('Espresso Double'),
+      i('Regular Coffee'),
+      i('Canadiano'),
+      i('Decaf Coffee'),
+      i('Cappuccino'),
+      i('Flat White'),
+      i('Latte'),
+      i('Chai Latte'),
+      i('Dirty Chai Latte'),
+      i('Matcha Latte'),
+      i('Mocha'),
+      i('Iced Shaken Espresso'),
+      i('Cortado'),
+      i('Macchiato — Espresso'),
+      i('Caramel Macchiato'),
+      i('Chocolate Macchiato'),
+      i('Affogato'),
+      i('Tea'),
+      i('Hot Chocolate'),
+      i('Soda'),
+      i('Water'),
+      i('Sparkling Water'),
+    ],
+  },
+  {
+    id: 'bakery',
+    title: 'Muffins & Bakery',
+    items: [
+      i('Chocolate Chip Muffin'),
+      i('Double Chocolate Muffin'),
+      i('Banana Pecan Muffin'),
+      i('Blueberry Muffin'),
+      i('Apple Muffin'),
+      i('Carrot Muffin'),
+      i('Butter Croissant'),
+      i('Almond Croissant'),
+      i('Hazelnut Croissant'),
+      i('Chocolatine'),
+      i('Strawberry Danish'),
+      i('Apple Danish'),
+      i('Peach Danish'),
+      i('Spinach & Feta Danish'),
+      i('Cinnamon Roll'),
+      i('Banana Bread'),
+      i('Cookie'),
+      i('Waffle'),
+    ],
+  },
+  {
+    id: 'milkshakes',
+    title: 'Milkshakes',
+    items: [i('Milkshake'), i('Protein Milkshake')],
+  },
+  {
+    id: 'refreshers',
+    title: 'Refreshers',
+    blurb: 'Flavours rotate — ask in café for today’s line-up.',
+    items: [i('Refresher')],
+  },
+  {
+    id: 'smoothies',
+    title: 'Smoothies',
+    blurb: 'Flavours rotate — ask in café for today’s line-up.',
+    items: [i('Smoothie')],
+  },
+  {
+    id: 'sweets',
+    title: 'Sweets & Crepes',
+    items: [
+      i('Cheesecake'),
+      i('Pie Slice'),
+      i('Tiramisu'),
+      i('Macaron'),
+      i('Brownie'),
+      i('Cake Slice'),
+      i('Sugar Crepe'),
+      i('Nutella & Banana Crepe'),
+      i('Maple Crepe'),
+      i('Maple Pancake'),
+      i('Nutella & Banana Pancake'),
+      i('Cheese Crepe'),
+      i('Cheese & Egg Crepe'),
+      i('Turkey & Cheese Crepe'),
+      i('Jambon & Cheese Crepe'),
+      i('The Ultimate Crepe'),
+    ],
+  },
+  {
+    id: 'gelato',
+    title: 'Italian Gelato',
+    blurb:
+      'Flavours in the case may include pistachio, café biscotto, hazelnut, Madagascar vanilla, strawberry sorbet, rich chocolate, mango, piña colada and wildberry — please confirm today’s selection in café.',
+    items: [i('Medium'), i('Large'), i('Affogato')],
+  },
+];
+
+export const menuNote =
+  'Menu items, availability and prices may change. Please contact the café for the latest information.';
+
+export const priceNote =
+  'Prices are not published online yet — please confirm current prices in café or by phone.';
