@@ -368,6 +368,8 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	base: isDev ? '/' : '/Sachi-s-Beechwood/',
+
 	optimizeDeps: {
 		include: allDeps,
 	},
