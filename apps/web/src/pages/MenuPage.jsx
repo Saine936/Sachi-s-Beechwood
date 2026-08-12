@@ -109,25 +109,6 @@ export default function MenuPage() {
             to confirm prices, dietary details or availability.
           </p>
         </div>
-
-        <section className="mt-16">
-          <h2 className="font-serif text-3xl text-primary">From the café</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            {[
-              [img.bakery, 'Croissants, danishes and muffins in the bakery basket'],
-              [img.gelato, 'Italian gelato flavours in the display case'],
-              [img.breakfast, 'All-day breakfast plate with coffee'],
-            ].map(([src, alt]) => (
-              <img
-                key={src}
-                src={src}
-                alt={alt}
-                loading="lazy"
-                className="aspect-[4/3] w-full rounded-2xl object-cover"
-              />
-            ))}
-          </div>
-        </section>
       </div>
     </>
   );

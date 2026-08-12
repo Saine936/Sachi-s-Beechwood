@@ -22,18 +22,18 @@ export const business = {
   googleReviews: 'https://www.google.com/maps/search/?api=1&query=Sachi%27s+Beechwood+Ottawa',
   writeReview: 'https://www.google.com/maps/search/?api=1&query=Sachi%27s+Beechwood+Ottawa',
   social: {
-    instagram: '#', // TODO: add real Instagram URL
-    facebook: '#', // TODO: add real Facebook URL
+   
+    facebook: 'https://www.facebook.com/profile.php?id=61582266736234#', // TODO: add real Facebook URL
   },
   
-  hours: [
-  { day: 'Monday', hours: '7:00 AM–7:00 PM' },
-  { day: 'Tuesday', hours: '7:00 AM–7:00 PM' },
-  { day: 'Wednesday', hours: '7:00 AM–7:00 PM' },
-  { day: 'Thursday', hours: '7:00 AM–7:00 PM' },
-  { day: 'Friday', hours: '7:00 AM–7:00 PM' },
-  { day: 'Saturday', hours: '7:00 AM–7:00 PM' },
-  { day: 'Sunday', hours: '7:00 AM–7:00 PM' },
+hours: [
+  { day: 'Monday', time: '7:00 AM–7:00 PM' },
+  { day: 'Tuesday', time: '7:00 AM–7:00 PM' },
+  { day: 'Wednesday', time: '7:00 AM–7:00 PM' },
+  { day: 'Thursday', time: '7:00 AM–7:00 PM' },
+  { day: 'Friday', time: '7:00 AM–7:00 PM' },
+  { day: 'Saturday', time: '7:00 AM–7:00 PM' },
+  { day: 'Sunday', time: '7:00 AM–7:00 PM' },
 ],
 hoursNotice: '',
 };

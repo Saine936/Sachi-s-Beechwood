@@ -50,20 +50,6 @@ export default function VisitPage() {
         <MapEmbed className="min-h-[420px]" />
       </section>
 
-      <section className="mx-auto w-full max-w-[80rem] px-5 pb-20">
-        <h2 className="font-serif text-3xl text-primary">A look around</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {gallery.map(([src, alt]) => (
-            <img
-              key={src + alt}
-              src={src}
-              alt={alt}
-              loading="lazy"
-              className="aspect-[4/3] w-full rounded-2xl object-cover"
-            />
-          ))}
-        </div>
-      </section>
     </>
   );
 }

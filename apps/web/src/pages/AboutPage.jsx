@@ -47,30 +47,7 @@ export default function AboutPage() {
             <ActionButtons className="mt-8" />
           </div>
         </Reveal>
-        <Reveal delay={0.1}>
-          <div className="grid gap-4">
-            <img
-              src={img.interior}
-              alt="Café interior with wooden tables, plants and comfortable seating"
-              loading="lazy"
-              className="aspect-[3/2] w-full rounded-3xl object-cover"
-            />
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src={img.patio}
-                alt="Flower-filled café patio"
-                loading="lazy"
-                className="aspect-square w-full rounded-3xl object-cover"
-              />
-              <img
-                src={img.caramelLatte}
-                alt="Salted caramel iced latte on a wooden counter"
-                loading="lazy"
-                className="aspect-square w-full rounded-3xl object-cover"
-              />
-            </div>
-          </div>
-        </Reveal>
+        
       </section>
     </>
   );
