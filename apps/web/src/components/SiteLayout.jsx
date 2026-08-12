@@ -120,17 +120,7 @@ export default function SiteLayout({ children }) {
               A cozy neighbourhood café in the heart of Ottawa — specialty coffee, fresh breakfast
               and lunch, pastries, desserts, crepes and Italian gelato.
             </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Under new management since June 2026
-            </p>
             <div className="mt-4 flex gap-3">
-              <a
-                href={business.social.instagram}
-                aria-label="Instagram"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-primary/25 text-primary transition hover:bg-primary hover:text-primary-foreground"
-              >
-                <Instagram className="h-4 w-4" />
-              </a>
               <a
                 href={business.social.facebook}
                 aria-label="Facebook"
