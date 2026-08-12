@@ -25,9 +25,17 @@ export const business = {
     instagram: '#', // TODO: add real Instagram URL
     facebook: '#', // TODO: add real Facebook URL
   },
-  // Hours are not verified. Fill in below to publish them; leave empty to show the confirm notice.
-  hours: [],
-  hoursNotice: "Please confirm today's hours on Google",
+  
+  hours: [
+  { day: 'Monday', hours: '7:00 AM–7:00 PM' },
+  { day: 'Tuesday', hours: '7:00 AM–7:00 PM' },
+  { day: 'Wednesday', hours: '7:00 AM–7:00 PM' },
+  { day: 'Thursday', hours: '7:00 AM–7:00 PM' },
+  { day: 'Friday', hours: '7:00 AM–7:00 PM' },
+  { day: 'Saturday', hours: '7:00 AM–7:00 PM' },
+  { day: 'Sunday', hours: '7:00 AM–7:00 PM' },
+],
+hoursNotice: '',
 };
 
 export const fullAddress = `${business.street}, ${business.city}, ${business.province} ${business.postalCode}`;
