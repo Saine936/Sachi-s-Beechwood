@@ -158,5 +158,8 @@ export const menu = [
   },
 ];
 
+export const menuNote =
+  'Menu items and availability may change. Please ask our staff about ingredients, allergens and dietary options.';
+
 export const priceNote =
   'Prices are not published online yet — please confirm current prices in café or by phone.';
