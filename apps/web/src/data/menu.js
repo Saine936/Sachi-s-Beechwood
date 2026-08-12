@@ -158,8 +158,5 @@ export const menu = [
   },
 ];
 
-export const menuNote =
-  'Menu items, availability and prices may change. Please contact the café for the latest information.';
-
 export const priceNote =
   'Prices are not published online yet — please confirm current prices in café or by phone.';

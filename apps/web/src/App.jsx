@@ -12,7 +12,6 @@ import MenuPage from "./pages/MenuPage";
 import AboutPage from "./pages/AboutPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import VisitPage from "./pages/VisitPage";
-import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -46,10 +45,6 @@ function App() {
             element={<VisitPage />}
           />
 
-          <Route
-            path="/contact"
-            element={<ContactPage />}
-          />
 
           <Route
             path="*"

@@ -9,7 +9,6 @@ const nav = [
   { to: '/about', label: 'About' },
   { to: '/reviews', label: 'Reviews' },
   { to: '/visit', label: 'Visit Us' },
-  { to: '/contact', label: 'Contact' },
 ];
 
 export function Wordmark({ className = '' }) {
